@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ======================> Menu <======================= -->
+    <div class="container-fluid header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 " data-aos="fade-down"
+                    data-aos-duration="900">
+                    <div class="nav-bar">
+                        <ul class="logo">
+                            <li>
+                                <a href="#home">MENGKE</a>
+                            </li>
+                            <li>
+                                <a><i class="fa-solid fa-bars" onclick="showMenu(), isShowDraw()"></i></a>
+                            </li>
+                        </ul>
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a class="tap-menu" onclick="isActive()" href="#home">HOME</a>
+                                </li>
+                                <li>
+                                    <a class="tap-menu" onclick="isActive()" href="#about">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a class="tap-menu" onclick="isActive()" href="#service">SERVICE</a>
+                                </li>
+                                <li>
+                                    <a class="tap-menu" onclick="isActive()" href="#work">WORK</a>
+                                </li>
+                                <li>
+                                    <a class="tap-menu" onclick="isActive()" href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====================> Side-Menu <=================== -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="side-menu" id="isShow">
+                    <ul class="logo">
+                        <li>
+                            <a href="#home" onclick="showMenu(),isShowDraw()">MENGKE</a>
+                        </li>
+                        <li>
+                            <a><i class="fa-solid fa-xmark" onclick="showMenu(),isShowDraw()"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <a class="tap-menu" onclick="isShowDraw(), showMenu()" href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a class="tap-menu" onclick="isShowDraw(), showMenu()" href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a class="tap-menu" onclick="isShowDraw(), showMenu()" href="#service">SERVICE</a>
+                        </li>
+                        <li>
+                            <a class="tap-menu" onclick="isShowDraw(), showMenu()" href="#work">WORK</a>
+                        </li>
+                        <li>
+                            <a class="tap-menu" onclick="isShowDraw(), showMenu()" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pop-draw" onclick="isShowDraw(), showMenu()"></div>
+    </div>
+    <!-- =====================> Detail <====================== -->
+    <div class="container-fluid header" id="home">
+        <!-- =========Header======== -->
+        <div class="container header-box">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-12 details">
+                    <div class="txt-box" data-aos="fade-up">
+                        <h4>Hello!</h4>
+                        <h1>
+                            I'm MOM <span>Mengke</span>
+                        </h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">
+                            This is my Portfolio website to shows all
+                            <br>Details and work experience web development
+                        </p>
+                    </div>
+                    <div class="cv-download" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="">DOWNLOAD CV</a>
+                    </div>
+                    <div class="contact" data-aos="fade-up" data-aos-duration="3000">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-12 images" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <div class="my-pic">
+                        <img src="img/IMG_2929.JPEG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========/Header======= -->
+    </div>
+
+    <!-- ====================> AboutMe <====================== -->
+    <div class="container-fluid my-about">
+        <div class="container about" id="about">
+            <div class="row">
+                <div class="about-title" data-aos="fade-up" data-aos-duration="700">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-5 col-lg-5 col-md-12 col-sm-12 about-img" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <img src="img/IMG_3077.JPG" alt="">
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-12 col-sm-12 about-txt">
+                        <p data-aos="fade-up" data-aos-duration="1000"> I'm a passionate individual looking to build
+                            a
+                            career in web development. While I don't have professional experience yet, I'm dedicated
+                            to
+                            learning and improving my skills every day.
+
+                            My journey in web development began with my curiosity about how websites work. I've been
+                            teaching myself HTML, CSS, and JavaScript through online courses and tutorials.
+
+                            I'm detail-oriented, creative, and eager to take on new challenges. I believe in clean,
+                            user-friendly design and writing efficient code.
+                        </p>
+                        <div class="tap-title" data-aos="fade-up" data-aos-duration="1500">
+                            <p class="tap-link active-link" onclick="opentap('skill')">Skills</p>
+                            <p class="tap-link" onclick="opentap('experience')">Experience</p>
+                            <p class="tap-link" onclick="opentap('education')">Education</p>
+                        </div>
+                        <div class="tap-contents active-tap" id="skill" data-aos="fade-up" data-aos-duration="2000">
+                            <ul>
+                                <li>
+                                    <Span>Computer Skills</Span>
+                                    <p>Microsoft Offices</p>
+                                    <p>Adobe Photoshop</p>
+                                </li>
+                                <li>
+                                    <span>Web Developments</span>
+                                    <p>Design Web Interfaces</p>
+                                    <p>Web Developments</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tap-contents" id="experience" data-aos="fade-up" data-aos-duration="2000">
+                            <ul>
+                                <li>
+                                    <Span>E-Commerce Website</Span>
+                                    <h3>AEU University | 2024 - Current</h3>
+                                    <p>• Designed and developed a static website showcasing furniture products using
+                                        [mention technologies used, e.g., HTML, CSS, JavaScript]. <br>
+                                        • Created an organized layout with product listings, images, and
+                                        descriptions. <br>
+                                        • Focused on user-friendly navigation and aesthetic design principles. <br>
+                                        • Gained experience in web development and UI/UX design.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tap-contents" id="education" data-aos="fade-up" data-aos-duration="2000">
+                            <ul>
+                                <li>
+                                    <Span>Asia Euro University</Span>
+                                    <p>Year 3 | 2023 - Current</p>
+                                </li>
+                                <li>
+                                    <span>Hun Sen Takhmao High School</span>
+                                    <p>High School Diploma | 2022</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================> Service <======================= -->
+    <div class="container-fluid my-service">
+        <div class="container service" id="service">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="service-title" data-aos="fade-up" data-aos-duration="700">
+                        <h1>What I Offer?</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="single-service">
+                                <i class="fa-solid fa-building"></i>
+                                <div class="service-txt">
+                                    <h2>Branding & Identity</h2>
+                                    <p>
+                                        I help bring ideas to life with creative branding solutions. From logos to brand
+                                        identity elements, I design visually compelling graphics that make a lasting
+                                        impression.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="single-service">
+                                <i class="fa-solid fa-keyboard"></i>
+                                <div class="service-txt">
+                                    <h2>Web Design & Development</h2>
+                                    <p>
+                                        I create modern, responsive, and user-friendly websites that offer a seamless
+                                        experience across devices. Whether it's a personal blog or a business site, I
+                                        build visually appealing and functional designs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="single-service">
+                                <i class="fa-solid fa-computer"></i>
+                                <div class="service-txt">
+                                    <h2>UI/UX Design</h2>
+                                    <p>
+                                        I design user-friendly interfaces with a focus on simplicity and effectiveness.
+                                        By understanding user needs, I create intuitive and visually appealing digital
+                                        experiences.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="single-service">
+                                <i class="fa-solid fa-ear-deaf"></i>
+                                <div class="service-txt">
+                                    <h2> 24/7 Friendly Support</h2>
+                                    <p>
+                                        I’m always available to assist with design and development needs. Whether it’s a
+                                        quick fix or a new project idea, I’m here to help.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====================> Work <======================== -->
+    <div class="container-fluid my-work">
+        <div class="container work" id="work">
+            <div class="row">
+                <div class="work-title" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Featured Works.</h1>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="500">
+                    <div class="img-box">
+                        <img src="img/furniture.png" alt="">
+                        <div class="detail-box">
+                            <h2>Furniture Shopify</h2>
+                            <p>
+                                Plentiful designs for shop and product detail pages let your items impress visitors in
+                                stylish presentations.
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="700">
+                    <div class="img-box">
+                        <img src="img/fashion.png" alt="">
+                        <div class="detail-box">
+                            <h2>Fashion Store</h2>
+                            <p>
+                                Create a truly amazing online store, choose the version that suits your requirements
+                                best
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="900">
+                    <div class="img-box">
+                        <img src="img/computer.png" alt="">
+                        <div class="detail-box">
+                            <h2>Computer Shop</h2>
+                            <p>
+                                Plentiful designs for shop and product detail pages let your items impress visitors in
+                                stylish presentations.
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-more">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================> Contact <======================= -->
+    <div class="container-fluid my-contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="contact-title">
+                        <h1>Contact Me!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row form">
+                <div class="col-xxl-6 form-group">
+                    <input class="form-controls" type="text" name="" id="" placeholder="Name">
+                </div>
+                <div class="col-xxl-6 form-group">
+                    <input class="form-controls" type="text" name="" id="" placeholder="Email">
+                </div>
+                <div class="col-xxl-12 form-group">
+                    <input class="form-controls" type="text" name="" id="" placeholder="Subject">
+                </div>
+                <div class="col-xxl-12 form-group txt-area">
+                    <textarea class="form-controls" rows="4" name="" id="" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-xxl-12 btn-group">
+                    <button class="btn-submit" type="button">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================> Footer <======================== -->
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 foot-box">
+                    <div class="social-link">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>©Copyright 2025 Mengke | All RightReserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- ===========> AOS Animate <===========-->
+<script>
+    AOS.init();
+</script>
+
+<!-- ===========> JavaScript <============= -->
+<script src=" main.js"></script>
+
+
+</html>
