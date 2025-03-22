@@ -603,6 +603,18 @@
     margin: auto;
 }
 
+.form .form-group {
+    margin-bottom: 25px;
+}
+
+.form .form-group .error-txt {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(155, 0, 0);
+    padding-top: 5px;
+    display: none;
+}
+
 .form-controls {
     display: block;
     border: 0;
@@ -614,8 +626,12 @@
     background-color: #F7F7F7;
     border-radius: 0px;
     box-shadow: none;
-    margin-bottom: 25px;
     outline: none;
+}
+
+.error-frm-ctr {
+    border: 2px solid rgb(155, 0, 0);
+    border: 0;
 }
 
 .form-group textarea {
